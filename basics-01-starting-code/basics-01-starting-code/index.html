@@ -14,11 +14,13 @@
   </head>
   <body>
     <header>
-      <h1>Vue Course Goals</h1>
+      <h1>Vue</h1>
     </header>
     <section id="user-goal">
-      <h2>My Course Goal!</h2>
-      <p></p>
+      <h2>Vue practice</h2>
+      <!-- <p v-html="outputGoal()"></p>     보안 때문에 v-html은 잘 쓰지 않는다. csfr 공격   -->
+      <p>{{outputGoal()}}</p>
+      <p> Vue에 대해서 더 알아보기 <a v-bind:href="vueLink">클릭</a></p>
     </section>
   </body>
 </html>
